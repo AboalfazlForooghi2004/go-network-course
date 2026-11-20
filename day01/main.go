@@ -7,11 +7,22 @@ func main() {
 	port := 8080
 	protocol := "TCP"
 
-	fmt.Println("hello,go networl programming for network eng")
-	fmt.Println("Port:", port)
-	fmt.Println("Host:", host)
-	fmt.Println("Protocol:", protocol)
+	letancy := 12.5
+	isActiv := true
 
-	fmt.Printf("server address: %s:%d\n", host, port)
+	connectionCount := 0
 
+	fmt.Println("network Service Info")
+	fmt.Println("----------------------")
+	fmt.Printf("Host: %s\n", host)
+	fmt.Printf("Port: %d\n", port)
+	fmt.Printf("Protocol: %s\n", protocol)
+
+	fmt.Printf("Latency: %.1f ms\n", letancy)
+	fmt.Printf("Active: %t\n", isActiv)
+	fmt.Printf("connections: %d\n", connectionCount)
+
+	fmt.Println("--------------------------------------------")
+
+	networkService()
 }
